@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.slideshow-container {
+        margin: auto;
+        width: 50%;
+
+        padding: 10px;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+body {
+        background-image: url("/Images/IMG_20210126_174229.jpg");
+
+        background-size: cover;
+      }
+
+
+      .sheading
+      {
+        text-align: center;
+        margin-top: 50px;
+       margin-bottom: 100px;
+      }
+
+        .rheading
+        {
+          text-align: center;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        }
+
+        .Wonder {
+        float: left;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.Wonder:link {
+        text-decoration: none;
+      }
+      a.Wonder:visited {
+        text-decoration: none;
+      }
+      a.Wonder:hover {
+        text-decoration: underline;
+      }
+
+      .home {
+        float:right;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.home:link {
+        text-decoration: none;
+      }
+      a.home:visited {
+        text-decoration: none;
+      }
+      a.home:hover {
+        text-decoration: underline;
+      }
+
+    </style>
+</head>
+
+<body>
+
+  <div>
+    <a class="Wonder" href="/sel.html">
+      <h3>Wonder</h3>
+    </a>
+  </div>
+
+  <a class="home" href="/main.html">
+    <h3>Main Page</h3>
+  </a>
+
+<div class="rheading">
+  <h1>2.Christ the Redeemer Statue</h1>
+</div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img
+        src="/Images/RedeemerStatueImg/biggggg christ.jpeg"
+        width="600"
+        height="400"
+      />
+    </div>
+
+    <div class="mySlides fade">
+      <img
+        src="/Images/RedeemerStatueImg/doenload2.1.jpg"
+        width="600"
+        height="400"
+      />
+    </div>
+
+    <div class="mySlides fade">
+      <img
+        src="/Images/RedeemerStatueImg/download3.jpg"
+        width="600"
+        height="400"
+      />
+    </div>  
+  </div>
+  </div> 
+
+
+  <div class="sheading">
+    <h2>Deatails</h2>
+
+    <p>Christ the Redeemer (Portuguese: Cristo Redentor, standard Brazilian Portuguese: [ˈkɾistu ʁedẽˈtoʁ], local pronunciation: [ˈkɾiɕtŭ̥ xe̞dẽˈtoɦ]) is an Art Deco statue of Jesus Christ in Rio De Janeiro, Brazil, created by Polish-French sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida fashioned the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) high, excluding its 8-metre (26 ft) pedestal. The arms stretch 28 metres (92 ft) wide</p>
+ <p>The statue weighs 635 metric tons (625 long, 700 short tons), and is located at the peak of the 700-metre (2,300 ft) Corcovado mountain in the Tijuca Forest National Park overlooking the city of Rio de Janeiro. A symbol of Christianity across the world, the statue has also become a cultural icon of both Rio de Janeiro and Brazil, and is listed as one of the New Seven Wonders of the World.[3] It is made of reinforced concrete and soapstone.</p>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+
+      setTimeout(showSlides, 2000);
+    }
+  </script>
+
+
+</body>
+</html>

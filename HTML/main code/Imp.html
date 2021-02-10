@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .slideshow-container {
+        margin: auto;
+        width: 50%;
+
+        padding: 10px;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      body {
+        background-image: url("/Images/IMG_20210126_174229.jpg");
+
+        background-size: cover;
+      }
+
+      .headingImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .sheading
+      {
+        text-align: center;
+   
+        margin-top: 50px;
+       margin-bottom: 100px;
+      }
+      .mheading{
+        text-align: center;
+   
+        margin-top: 50px;
+       margin-bottom: 100px;
+      }
+
+      .Wonder {
+        float: left;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.Wonder:link {
+        text-decoration: none;
+      }
+      a.Wonder:visited {
+        text-decoration: none;
+      }
+      a.Wonder:hover {
+        text-decoration: underline;
+      }
+
+      .home {
+        float:right;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.home:link {
+        text-decoration: none;
+      }
+      a.home:visited {
+        text-decoration: none;
+      }
+      a.home:hover {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <a class="Wonder" href="/sel.html">
+      <h3>Wonder</h3>
+    </a>
+  </div>
+
+  <a class="home" href="/main.html">
+    <h3>Main Page</h3>
+  </a>
+
+    <div class="mheading">
+      <h1>3.Machu Picchu</h1>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          src="/Images/MachuPicchuImg/Machu_Picchu,_Peru.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/MachuPicchuImg/01-machu-picchu-secrets.ngsversion.1541525406737.adapt.1900.1.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/MachuPicchuImg/ED-166_machu-picchu_thn.jpg"
+          width="600"
+          height="400"
+        />
+      </div>  
+    </div>
+    </div>
+
+
+<div class="sheading">
+    <h2>Deatails</h2>
+
+    <p>Machu Picchu is a 15th-century Inca citadel, located in the Eastern Cordillera of southern Peru, on a 2,430-metre (7,970 ft) mountain ridge.[2][3] It is located in the Machupicchu District within Urubamba Province[4] above the Sacred Valley, which is 80 kilometres (50 mi) northwest of Cuzco. The Urubamba River flows past it, cutting through the Cordillera and creating a canyon with a tropical mountain climate.[5]</p>
+    <p>Most archaeologists believe that Machu Picchu was constructed as an estate for the Inca emperor Pachacuti (1438–1472). Often mistakenly referred to as the "Lost City of the Incas", it is the most familiar icon of Inca civilization. The Incas built the estate around 1450 but abandoned it a century later at the time of the Spanish conquest. Although known locally, it was not known to the Spanish during the colonial period and remained unknown to the outside world until American historian Hiram Bingham brought it to international attention in 1911.</p>
+  </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+  </body>
+</html>

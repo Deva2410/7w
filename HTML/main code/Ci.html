@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .slideshow-container {
+        margin: auto;
+        width: 50%;
+
+        padding: 10px;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      body {
+        background-image: url("/Images/IMG_20210126_174229.jpg");
+
+        background-size: cover;
+      }
+
+      .headingImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .sheading
+      {
+        text-align: center;
+   
+        margin-top: 50px;
+       margin-bottom: 50px;
+      }
+
+     .iheading
+     {
+      text-align: center;
+        margin-top: 50px;
+        margin-bottom: 70px;
+     }
+
+     .Wonder {
+        float: left;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.Wonder:link {
+        text-decoration: none;
+      }
+      a.Wonder:visited {
+        text-decoration: none;
+      }
+      a.Wonder:hover {
+        text-decoration: underline;
+      }
+
+      .home {
+        float:right;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.home:link {
+        text-decoration: none;
+      }
+      a.home:visited {
+        text-decoration: none;
+      }
+      a.home:hover {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <a class="Wonder" href="/sel.html">
+    <h3>Wonder</h3>
+  </a>
+</div>
+
+<a class="home" href="/main.html">
+  <h3>Main Page</h3>
+</a>
+<div class="iheading">
+<h1>4.Chichen Itza</h1>
+</div>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          src="/Images/ChichenItzaImg/meican taco.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/ChichenItzaImg/Chichen-Itza-sunset.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/ChichenItzaImg/1200px-Chichen_Itza_(3326547826).jpg"
+          width="600"
+          height="400"
+        />
+      </div>  
+    </div>
+    </div>
+
+
+<div class="sheading">
+    <h2>Deatails</h2>
+</div>
+    <p>Chichen Itza was a major focal point in the Northern Maya Lowlands from the Late Classic (c. AD 600–900) through the Terminal Classic (c. AD 800–900) and into the early portion of the Postclassic period (c. AD 900–1200). The site exhibits a multitude of architectural styles, reminiscent of styles seen in central Mexico and of the Puuc and Chenes styles of the Northern Maya lowlands. The presence of central Mexican styles was once thought to have been representative of direct migration or even conquest from central Mexico, but most contemporary interpretations view the presence of these non-Maya styles more as the result of cultural diffusion.</p>
+  <p> Chichen Itza was one of the largest Maya cities and it was likely to have been one of the mythical great cities, or Tollans, referred to in later Mesoamerican literature.[2] The city may have had the most diverse population in the Maya world, a factor that could have contributed to the variety of architectural styles at the site.[3]</p>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .slideshow-container {
+        margin: auto;
+        width: 50%;
+
+        padding: 10px;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      body {
+        background-image: url("/Images/IMG_20210126_174229.jpg");
+
+        background-size: cover;
+      }
+
+      .headingImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .sheading
+      {
+        text-align: center;
+   
+        margin-top: 50px;
+       margin-bottom: 50px;
+      }
+
+      .aheading
+      {
+
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 70px;
+      }
+
+      .Wonder {
+        float: left;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.Wonder:link {
+        text-decoration: none;
+      }
+      a.Wonder:visited {
+        text-decoration: none;
+      }
+      a.Wonder:hover {
+        text-decoration: underline;
+      }
+
+      .home {
+        float:right;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.home:link {
+        text-decoration: none;
+      }
+      a.home:visited {
+        text-decoration: none;
+      }
+      a.home:hover {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <a class="Wonder" href="/sel.html">
+      <h3>Wonder</h3>
+    </a>
+  </div>
+  
+  <a class="home" href="/main.html">
+    <h3>Main Page</h3>
+  </a>
+
+    <div class="aheading">
+      <h1>7.Petra</h1>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          src="/Images/SandcastelImg/1200px-The_Monastery,_Petra,_Jordan8.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/SandcastelImg/Petra-by-night-1-min-16.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/SandcastelImg/sand Castel.jpg"
+          width="600"
+          height="400"
+        />
+      </div>  
+    </div>
+    </div>
+
+
+<div class="sheading">
+    <h2>Deatails</h2>
+  </div>
+    <p>Petra (Arabic: ٱلْبَتْرَاء‎, romanized: Al-Batrāʾ; Ancient Greek: Πέτρα, "Rock"), originally known to its inhabitants in as Raqmu or Raqēmō (𐢚𐢛𐢓𐢈),[3][4] is a historic and archaeological city in southern Jordan. Petra lies around Jabal Al-Madbah in a basin surrounded by mountains which form the eastern flank of the Arabah valley that runs from the Dead Sea to the Gulf of Aqaba.[5] The area around Petra has been inhabited from as early as 7000 BC,[6] and the Nabataeans might have settled in what would become the capital city of their kingdom, as early as the 4th century BC.[7] However, archaeological work has only discovered evidence of Nabataean presence dating back to the second century BC,[8] by which time Petra had become their capital.[6] The Nabataeans were nomadic Arabs who invested in Petra's proximity to the trade routes by establishing it as a major regional trading hub.</p>
+  <P>The trading business gained the Nabataeans considerable revenue and Petra became the focus of their wealth. The Nabataeans were accustomed to living in the barren deserts, unlike their enemies, and were able to repel attacks by taking advantage of the area's mountainous terrain. They were particularly skillful in harvesting rainwater, agriculture and stone carving. Petra flourished in the 1st century AD, when its famous Al-Khazneh structure – believed to be the mausoleum of Nabataean king Aretas IV – was constructed, and its population peaked at an estimated 20,000 inhabitants.</P>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+  </body>
+</html>
+

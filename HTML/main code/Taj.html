@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .slideshow-container {
+        margin: auto;
+        width: 50%;
+
+        padding: 10px;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      body {
+        background-image: url("/Images/IMG_20210126_174229.jpg");
+
+        background-size: cover;
+      }
+
+      .headingImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .sheading
+      {
+        text-align: center;
+   
+        margin-top: 50px;
+       margin-bottom: 50px;
+      }
+
+      .theading
+      {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 70px;
+      }
+
+      .Wonder {
+        float: left;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.Wonder:link {
+        text-decoration: none;
+      }
+      a.Wonder:visited {
+        text-decoration: none;
+      }
+      a.Wonder:hover {
+        text-decoration: underline;
+      }
+
+      .home {
+        float:right;
+        margin-top: -50px;
+        color: black;
+      }
+
+      a.home:link {
+        text-decoration: none;
+      }
+      a.home:visited {
+        text-decoration: none;
+      }
+      a.home:hover {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <a class="Wonder" href="/sel.html">
+      <h3>Wonder</h3>
+    </a>
+  </div>
+  
+  <a class="home" href="/main.html">
+    <h3>Main Page</h3>
+  </a>
+
+    <div class="theading">
+      <h1>6.Taj Mahal</h1>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          src="/Images//TajmahlImg/taj mhal.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/TajmahlImg/taj-mahal-at-full-moon-night.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images//TajmahlImg/TajPMFull2-2016-12-2-02-38.jpg"
+          width="600"
+          height="400"
+        />
+      </div>  
+    </div>
+    </div>
+
+
+<div class="sheading">
+    <h2>Deatails</h2>
+  </div>
+    <p>The Taj Mahal  lit. 'Crown of the Palace', is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</p>
+  <p>Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million rupees, which in 2020 would be approximately 70 billion rupees (about U.S. $956 million). The construction project employed some 20,000 artisans under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.</p>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+  </body>
+</html>

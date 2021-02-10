@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .slideshow-container {
+        margin: auto;
+        width: 50%;
+
+        padding: 10px;
+      }
+
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      body {
+        background-image: url("/Images/IMG_20210126_174229.jpg");
+
+        background-size: cover;
+      }
+
+      .Heading {
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .Home {
+        float: right;
+        margin-top: -100px;
+        color: black;
+      }
+      .Wonder {
+        float: left;
+        margin-top: -100px;
+        color: black;
+      }
+
+      a.Wonder:link {
+        text-decoration: none;
+      }
+      a.Wonder:visited {
+        text-decoration: none;
+      }
+      a.Wonder:hover {
+        text-decoration: underline;
+      }
+
+      a.Home:link {
+        text-decoration: none;
+      }
+      a.Home:visited {
+        text-decoration: none;
+      }
+      a.Home:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a class="Wonder" href="sel.html">
+        <h3>Wonder</h3>
+      </a>
+    </div>
+    <div>
+      <a class="Home" href="final.html">
+        <h3>Home</h3>
+      </a>
+    </div>
+    <div class="Heading">
+      <h1>7 Wonders of the world</h1>
+      <h4>Exploring the world</h4>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          src="/Images/ImagesofChina/corona virus wall.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/RedeemerStatueImg/biggggg christ.jpeg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/MachuPicchuImg/Machu_Picchu,_Peru.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/ChichenItzaImg/meican taco.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/RomanColosseumImg/Colosseum-Rome-Italy.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="/Images/SandcastelImg/sand Castel.jpg"
+          width="600"
+          height="400"
+        />
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+  </body>
+</html>
